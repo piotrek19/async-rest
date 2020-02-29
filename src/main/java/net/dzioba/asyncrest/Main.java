@@ -1,7 +1,5 @@
 package net.dzioba.asyncrest;
 
-import net.dzioba.asyncrest.domain.bootstrap.DataLoader;
-import net.dzioba.asyncrest.domain.services.map.BookServiceMap;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -37,9 +35,9 @@ public class Main {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        // invoke data loader
-        DataLoader dataLoader = new DataLoader(new BookServiceMap());
-        dataLoader.run();
+        // invoke data loader - NOW commented because BookService is singleton which initialize on its own
+        //DataLoader dataLoader = new DataLoader(new BookServiceMap());
+        //dataLoader.run();
 
         // start http server
         final HttpServer server = startServer();
