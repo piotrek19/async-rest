@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode
 @ToString
 @Builder
-public class Book {
+public class Book implements BaseEntity {
 
     private Long id;
     private String title;
