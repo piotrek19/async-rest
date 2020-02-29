@@ -1,4 +1,4 @@
-package net.dzioba;
+package net.dzioba.asyncrest;
 
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory;

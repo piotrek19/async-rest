@@ -1,4 +1,4 @@
-package net.dzioba.domain;
+package net.dzioba.asyncrest.domain;
 
 import java.util.Date;
 

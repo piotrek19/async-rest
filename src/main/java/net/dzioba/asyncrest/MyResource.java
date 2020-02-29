@@ -1,4 +1,4 @@
-package net.dzioba;
+package net.dzioba.asyncrest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

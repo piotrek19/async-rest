@@ -119,7 +119,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>net.dzioba.Main</mainClass>
+                    <mainClass>net.dzioba.asyncrest.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
