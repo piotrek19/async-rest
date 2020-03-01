@@ -2,6 +2,7 @@ package net.dzioba.asyncrest.domain;
 
 import lombok.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.LocalDate;
 
 @Getter
@@ -11,6 +12,7 @@ import java.time.LocalDate;
 @EqualsAndHashCode
 @ToString
 @Builder
+@XmlRootElement
 public class Book implements BaseEntity {
 
     private Long id;

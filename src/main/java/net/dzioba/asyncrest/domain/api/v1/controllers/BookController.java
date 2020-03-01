@@ -9,6 +9,8 @@ import net.dzioba.asyncrest.domain.services.map.BookServiceMap;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import java.util.List;
 
 @Slf4j
@@ -21,11 +23,13 @@ public class BookController {
     private final BookService bookService = BookServiceMap.getInstance();
 
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Book> getBooks(){
         return bookService.findAll();
     }
 
     @GET
+    @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
     public Book getBooks(@PathParam("id") Long id){
         return bookService.findById(id);
